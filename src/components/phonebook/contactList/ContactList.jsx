@@ -1,3 +1,4 @@
+// import { prettyFormat } from '@testing-library/react';
 import PropTypes from 'prop-types';
 
 import styles from './ContactList.module.css';
@@ -29,4 +30,5 @@ ContactList.propTypes = {
       number: PropTypes.string.isRequired,
     })
   ),
+  onDeleteContact: PropTypes.func.isRequired,
 };

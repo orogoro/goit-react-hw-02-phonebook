@@ -27,3 +27,8 @@
 .lableName + .lableName {
   margin-top: 10px;
 }
+
+.errorMessage {
+  margin: 0;
+  color: red;
+}
