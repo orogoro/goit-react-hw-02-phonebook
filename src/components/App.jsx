@@ -18,12 +18,14 @@ export default class App extends Component {
   };
 
   addContact = ({ name, number }) => {
+    const Name = name.toLowerCase();
+
     const findName = this.state.contacts
-      .map(contact => contact.name)
-      .includes(name);
+      .map(contact => contact.name.toLowerCase())
+      .includes(Name);
 
     if (findName) {
-      alert(`${name} is already in contacts`);
+      alert(`${Name} is already in contacts`);
       return;
     }
 
